@@ -1,7 +1,7 @@
 {
   "name": "gulp-mask",
   "description": "mask out things bother your lint",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "git://github.com/surmind/gulp-mask"
@@ -13,6 +13,11 @@
   },
   "files": [
     "index.js"
+  ],
+  "keywords": [
+    "gulpplugin",
+    "lint",
+    "mask"
   ],
   "tags": [
     "gulpplugin",
