@@ -1,0 +1,5 @@
+var head = 'open';
+
+# comment
+I don't know when.
+Rarely, this function can be help.
