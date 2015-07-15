@@ -5,7 +5,7 @@ var PluginError = require('gulp-util').PluginError;
 
 var PLUGIN_NAME = 'gulp-mask';
 
-module.exports = function (open, close, opened) {
+module.exports = function (open, close, defaultOpened) {
   function tester(key) {
     if (typeof key === 'string') {
       return function (line) {
@@ -24,6 +24,7 @@ module.exports = function (open, close, opened) {
   var shouldClose = close && tester(close);
 
   return through.obj(function (file, enc, cb) {
+    var opened = defaultOpened;
     if (file.isNull()) {
       return cb();
     }
